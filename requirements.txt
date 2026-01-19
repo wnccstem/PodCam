@@ -1,0 +1,41 @@
+# PodsInSpace / PodCam Python dependencies
+# NOTE: On Raspberry Pi OS / Debian, some camera-related packages are better installed via apt
+# (system packages) rather than pip to ensure native bindings work with libcamera.
+# Recommended apt installs (DO NOT duplicate in pip if already installed):
+#   sudo apt install -y python3-picamera2 python3-libcamera python3-opencv python3-numpy python3-smbus
+#   sudo apt install -y rpicam-apps (or libcamera-apps on older images)
+# If you use a virtualenv, create it with --system-site-packages so these apt packages are visible.
+
+# If using headless environment, replace with opencv-python-headless
+opencv-python  
+
+# Core scientific / imaging
+numpy
+
+# Camera (optional via pip; prefer apt)
+# picamera2  # Usually installed via apt (python3-picamera2); uncomment ONLY if you need a pip build
+# libcamera  # Provided by OS packages; not typically available/needed via pip
+
+# Sensors
+bme680       # Gas/temperature/humidity sensor library
+smbus2       # I2C communication for moisture sensor
+
+# Networking / HTTP
+requests
+
+# Scheduling / task control
+schedule
+
+# CLI utilities / output formatting
+rich         # Colored console output and panels
+
+# Speed test (bandwidth measurements)
+speedtest-cli  # Provides the 'speedtest' Python module
+
+# Streaming / video (already covered by opencv)
+# If you add JPEG/FFmpeg enhancements explicitly you might also need:
+Pillow    
+
+# Email sending uses Python stdlib (smtplib, email) so no extra package required.
+
+# If deployment requires explicit version pinning, add ==<version> after each package.
