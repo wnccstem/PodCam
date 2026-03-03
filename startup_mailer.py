@@ -25,7 +25,8 @@ from time import sleep  # Use in loop to pause for trying connections
 # Add another email address to the list to
 # send messages to multiple accounts
 EMAIL_DEST = [
-    "williamloring@hotmail.com"
+    "williamloring@hotmail.com",
+    "trooks1@wncc.edu",
 ]
 
 # *************************************************************************#

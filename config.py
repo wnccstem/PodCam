@@ -29,7 +29,6 @@ DEFAULT_SENDER_PASSWORD = (
 # Multiple recipients - add more email addresses here
 DEFAULT_RECIPIENT_EMAILS = [
     "williamloring@hotmail.com",
-    "loringw@wncc.edu",
     "trooks1@wncc.edu",
 ]
 
